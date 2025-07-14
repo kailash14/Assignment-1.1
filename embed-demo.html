@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Demo - TechVista Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .demo-title {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .embed-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2196f3;
+        }
+        .iframe-container {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .code-example {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+        }
+        .tab.active {
+            background: #2196f3;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">🌐 Website Embedding Demonstration</h1>
+        
+        <div class="embed-info">
+            <h3>ℹ️ About This Demo</h3>
+            <p>This page demonstrates how your TechVista website can be embedded into other websites. 
+               The iframe below shows your complete website running inside another page.</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('homepage')">Homepage</button>
+            <button class="tab" onclick="showTab('services')">Services</button>
+            <button class="tab" onclick="showTab('about')">About</button>
+        </div>
+
+        <div id="homepage" class="tab-content active">
+            <h3>Homepage Embedded</h3>
+            <div class="iframe-container">
+                <iframe src="index.html" title="TechVista Homepage"></iframe>
+            </div>
+        </div>
+
+        <div id="services" class="tab-content">
+            <h3>Services Page Embedded</h3>
+            <div class="iframe-container">
+                <iframe src="services.html" title="TechVista Services"></iframe>
+            </div>
+        </div>
+
+        <div id="about" class="tab-content">
+            <h3>About Page Embedded</h3>
+            <div class="iframe-container">
+                <iframe src="about.html" title="TechVista About"></iframe>
+            </div>
+        </div>
+
+        <div class="embed-info">
+            <h3>📋 How to Embed This Site</h3>
+            <p>Copy and paste this code into any website to embed your pages:</p>
+            
+            <div class="code-example">
+&lt;!-- Basic embedding --&gt;<br>
+&lt;iframe src="https://your-site-url.com" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width="100%" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height="600px" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frameborder="0"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title="TechVista Website"&gt;<br>
+&lt;/iframe&gt;
+            </div>
+
+            <div class="code-example">
+&lt;!-- Responsive embedding --&gt;<br>
+&lt;div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;"&gt;<br>
+&nbsp;&nbsp;&lt;iframe src="https://your-site-url.com" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;frameborder="0"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title="TechVista Website"&gt;<br>
+&nbsp;&nbsp;&lt;/iframe&gt;<br>
+&lt;/div&gt;
+            </div>
+        </div>
+
+        <div class="embed-info">
+            <h3>✅ Features Working in Embed</h3>
+            <ul>
+                <li>✅ Full navigation between pages</li>
+                <li>✅ Responsive design adapts to iframe size</li>
+                <li>✅ All styling and animations work</li>
+                <li>✅ Images and thumbnails load properly</li>
+                <li>✅ Cross-origin embedding enabled</li>
+                <li>✅ SEO metadata preserved</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Mark clicked tab as active
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
