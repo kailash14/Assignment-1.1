@@ -1,0 +1,58 @@
+{
+  "site": {
+    "name": "TechVista Solutions",
+    "domain": "https://your-site.github.io",
+    "description": "Leading provider of innovative technology solutions for modern businesses"
+  },
+  "pages": {
+    "home": {
+      "title": "TechVista Solutions - Homepage",
+      "description": "Leading provider of innovative technology solutions for modern businesses",
+      "thumbnail": "https://via.placeholder.com/1200x630/4285f4/ffffff?text=TechVista+Solutions",
+      "url": "/",
+      "content": {
+        "hero_title": "Welcome to TechVista Solutions",
+        "hero_subtitle": "Transforming businesses through innovative technology solutions",
+        "company_name": "TechVista"
+      }
+    },
+    "services": {
+      "title": "Our Services - TechVista Solutions",
+      "description": "Comprehensive technology services including cloud computing, AI analytics, and cybersecurity solutions",
+      "thumbnail": "https://via.placeholder.com/1200x630/34a853/ffffff?text=Our+Services",
+      "url": "/services.html",
+      "content": {
+        "page_title": "Our Services",
+        "page_subtitle": "Comprehensive technology solutions tailored to your business needs"
+      }
+    },
+    "about": {
+      "title": "About Us - TechVista Solutions",
+      "description": "Learn about TechVista Solutions - a leading technology company with over 10 years of experience in digital transformation",
+      "thumbnail": "https://via.placeholder.com/1200x630/9c27b0/ffffff?text=About+TechVista",
+      "url": "/about.html",
+      "content": {
+        "page_title": "About TechVista Solutions",
+        "page_subtitle": "Pioneering the future of technology since 2014"
+      }
+    }
+  },
+  "social_media": {
+    "twitter_handle": "@techvista",
+    "facebook_page": "techvista",
+    "linkedin_company": "techvista-solutions"
+  },
+  "contact": {
+    "email": "info@techvista.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Tech Street, Innovation City, IC 12345"
+  },
+  "customization_notes": {
+    "titles": "Edit the 'title' fields to change page titles",
+    "descriptions": "Edit 'description' fields to change meta descriptions",
+    "thumbnails": "Replace thumbnail URLs with your own images",
+    "content": "Modify content fields to change page headings and text",
+    "domain": "Update the domain field when you deploy to your hosting service",
+    "colors": "Edit the CSS file to change colors and styling"
+  }
+}
